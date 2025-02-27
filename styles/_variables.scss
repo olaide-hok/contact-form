@@ -1,0 +1,16 @@
+@use "functions" as *;
+
+@font-face {
+  font-family: "Karla";
+  src: url(../assets/fonts/Karla-VariableFont_wght.ttf);
+}
+
+// colors
+$grey-900: #2a4144;
+$grey-500: #86a2a5;
+$green-600: #86a2a5;
+$green-200: #e0f1e8;
+$red: #d73c3c;
+
+// Typography
+$font-family: "Karla";
