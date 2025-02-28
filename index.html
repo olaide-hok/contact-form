@@ -19,11 +19,108 @@
     <title>Frontend Mentor | Contact form</title>
   </head>
   <body>
-    Contact Us First Name This field is required Last Name This field is
-    required Email Address Please enter a valid email address This field is
-    required Query Type General Enquiry Support Request Please select a query
-    type Message This field is required I consent to being contacted by the team
-    To submit this form, please consent to being contacted Submit Message Sent!
-    Thanks for completing the form. We'll be in touch soon!
+    <main class="container">
+      <div class="toast d-none">
+        Message Sent! Thanks for completing the form. We'll be in touch soon!
+      </div>
+      <form>
+        <h1 class="form_title heading-bold">Contact Us</h1>
+        <div class="name">
+          <!-- First Name -->
+          <div class="first_name">
+            <label class="body-sm-regular" for="first-name"
+              >First Name <span class="asterisk">*</span>
+            </label>
+            <input
+              class=""
+              type="text"
+              name="first-name"
+              id="first-name"
+              autocomplete="given-name"
+              aria-required="true"
+            >
+            <p class="error-msg body-sm-regular d-none">
+              This field is required
+            </p>
+          </div>
+          <!-- Last Name -->
+          <div class="last_name">
+            <label class="body-sm-regular" for="last-name"
+              >Last Name <span class="asterisk">*</span>
+            </label>
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              autocomplete="family-name"
+              aria-required="true"
+            >
+            <p class="error-msg body-sm-regular d-none">
+              This field is required
+            </p>
+          </div>
+        </div>
+        <!-- Email -->
+        <div class="email">
+          <label class="body-sm-regular" for="email"
+            >Email Address<span class="asterisk">*</span>
+          </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            autocomplete="email"
+            aria-required="true"
+          >
+          <p class="error-msg body-sm-regular d-none">
+            Please enter a valid email address
+          </p>
+        </div>
+        <!-- Query Type -->
+        <div class="query_type">
+          <label class="body-sm-regular" for="query_type">
+            Query Type <span class="asterisk">*</span></label
+          >
+          <div class="wrapper">
+            <div class="general_enq">
+              <input type="radio" name="general_enq" id="general_enq">
+              <label class="body-md-regular" for="general_enq"
+                >General Enquiry
+              </label>
+            </div>
+            <div class="support_req">
+              <input type="radio" name="support_req" id="support_req">
+              <label class="body-md-regular" for="support_req"
+                >Support Request
+              </label>
+            </div>
+          </div>
+          <p class="error-msg body-sm-regular d-none">
+            Please select a query type
+          </p>
+        </div>
+        <!-- Message -->
+        <div>
+          <label class="body-sm-regular" for="message"
+            >Message <span class="asterisk">*</span></label
+          >
+          <textarea name="message" id="message"></textarea>
+          <p class="error-msg body-sm-regular d-none">This field is required</p>
+        </div>
+        <div class="consent">
+          <div>
+            <input type="checkbox" name="consent" id="consent">
+            <label class="body-sm-regular" for="consent"
+              >I consent to being contacted by the team
+              <span class="asterisk">*</span>
+            </label>
+          </div>
+          <p class="error-msg body-sm-regular d-none">
+            To submit this form, please consent to being contacted
+          </p>
+        </div>
+        <button class="body-md-bold" type="submit">Submit</button>
+      </form>
+    </main>
   </body>
 </html>
