@@ -8,9 +8,46 @@
 // colors
 $grey-900: #2a4144;
 $grey-500: #86a2a5;
-$green-600: #86a2a5;
+$green-600: #0c7d69;
 $green-200: #e0f1e8;
 $red: #d73c3c;
 
 // Typography
 $font-family: "Karla";
+
+// Spacing
+$space-1600: rem(128px);
+$space-500: rem(40px);
+$space-400: rem(32px);
+$space-300: rem(24px);
+$space-200: rem(16px);
+$space-150: rem(12px);
+$space-100: rem(8px);
+
+.heading-bold {
+  font-size: rem(32px);
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: rem(-1px);
+}
+
+.body-md-bold {
+  font-size: rem(18px);
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+.body-md-regular {
+  font-size: rem(18px);
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+.body-sm-regular {
+  font-size: rem(16px);
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
