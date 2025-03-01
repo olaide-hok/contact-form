@@ -54,19 +54,38 @@ input[type="email"] {
   height: rem(51px);
   margin: $space-100 0;
   width: 100%;
+
+  &:hover,
+  &:focus,
+  &:focus-visible,
+  &:active {
+    cursor: pointer;
+    border-color: $green-600;
+  }
 }
 
-// input[type="radio"] {
-//   border-color: $grey-500;
-//   width: rem(24px);
-//   height: rem(24px);
-// }
+input[type="checkbox"] {
+  &:hover,
+  &:focus,
+  &:active {
+    cursor: pointer;
+  }
+}
+
+input[type="radio"] {
+  &:hover,
+  &:focus,
+  &:active {
+    cursor: pointer;
+  }
+}
 
 input[type="radio"],
 input[type="checkbox"] {
   border-color: $grey-500;
   width: rem(24px);
   height: rem(24px);
+  accent-color: $green-600;
 }
 
 button {
@@ -75,6 +94,13 @@ button {
   background: $green-600;
   color: white;
   padding: $space-200 $space-500;
+
+  &:hover {
+    cursor: pointer;
+    background:
+      linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+      $green-600;
+  }
 }
 
 .asterisk {
@@ -84,6 +110,12 @@ button {
 
 label {
   color: $grey-900;
+
+  &:hover,
+  &:focus,
+  &:active {
+    cursor: pointer;
+  }
 }
 
 .error-msg {
@@ -94,6 +126,36 @@ main {
   &.container {
     position: relative;
     padding: $space-400 $space-200;
+
+    .toast {
+      position: absolute;
+      top: 5rem;
+      transform: translate(-50%, -50%);
+      width: 327px;
+      left: 50%;
+      border-radius: $space-150;
+      background-color: $grey-900;
+      padding: $space-300;
+
+      div {
+        display: flex;
+        align-items: center;
+        column-gap: $space-100;
+
+        img {
+          width: 24px;
+          height: 24px;
+        }
+        p {
+          color: white;
+        }
+      }
+
+      .success {
+        color: $green-200;
+        margin-top: $space-100;
+      }
+    }
 
     form {
       background-color: white;
@@ -132,15 +194,33 @@ main {
             align-items: center;
             column-gap: $space-150;
             padding: $space-150 $space-300;
+
+            &:hover {
+              cursor: pointer;
+              border-color: $green-600;
+            }
+
+            &:focus,
+            &:active {
+              background-color: $green-200;
+            }
           }
         }
       }
 
       .consent {
-        div {
+        .wrapper {
           display: flex;
           align-items: center;
           column-gap: $space-200;
+
+          label {
+            &:hover,
+            &:focus,
+            &:active {
+              cursor: pointer;
+            }
+          }
         }
         margin: $space-500 0;
       }
@@ -153,6 +233,11 @@ main {
     &.container {
       padding: 0;
       margin: $space-1600 auto;
+
+      .toast {
+        top: rem(-46.4px);
+        width: rem(450px);
+      }
 
       form {
         padding: $space-500;
