@@ -21,7 +21,13 @@
   <body>
     <main class="container">
       <div class="toast d-none">
-        Message Sent! Thanks for completing the form. We'll be in touch soon!
+        <div>
+          <img src="/assets/images/icon-success-check.svg" alt="success check">
+          <p class="body-md-bold">Message Sent!</p>
+        </div>
+        <p class="success body-sm-regular">
+          Thanks for completing the form. We'll be in touch soon!
+        </p>
       </div>
       <form>
         <h1 class="form_title heading-bold">Contact Us</h1>
@@ -108,7 +114,7 @@
           <p class="error-msg body-sm-regular d-none">This field is required</p>
         </div>
         <div class="consent">
-          <div>
+          <div class="wrapper">
             <input type="checkbox" name="consent" id="consent">
             <label class="body-sm-regular" for="consent"
               >I consent to being contacted by the team
