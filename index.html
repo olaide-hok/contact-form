@@ -20,7 +20,7 @@
   </head>
   <body>
     <main class="container">
-      <div class="toast d-none">
+      <div id="successDisplay" class="toast d-none">
         <div>
           <img src="/assets/images/icon-success-check.svg" alt="success check">
           <p class="body-md-bold">Message Sent!</p>
@@ -29,7 +29,7 @@
           Thanks for completing the form. We'll be in touch soon!
         </p>
       </div>
-      <form>
+      <form id="form" novalidate>
         <h1 class="form_title heading-bold">Contact Us</h1>
         <div class="name">
           <!-- First Name -->
@@ -45,9 +45,10 @@
               autocomplete="given-name"
               aria-required="true"
             >
-            <p class="error-msg body-sm-regular d-none">
-              This field is required
-            </p>
+            <p
+              id="first_name-error"
+              class="error-msg body-sm-regular d-none"
+            ></p>
           </div>
           <!-- Last Name -->
           <div class="last_name">
@@ -61,9 +62,10 @@
               autocomplete="family-name"
               aria-required="true"
             >
-            <p class="error-msg body-sm-regular d-none">
-              This field is required
-            </p>
+            <p
+              id="last_name-error"
+              class="error-msg body-sm-regular d-none"
+            ></p>
           </div>
         </div>
         <!-- Email -->
@@ -72,15 +74,14 @@
             >Email Address<span class="asterisk">*</span>
           </label>
           <input
+            class=""
             type="email"
             name="email"
             id="email"
             autocomplete="email"
             aria-required="true"
           >
-          <p class="error-msg body-sm-regular d-none">
-            Please enter a valid email address
-          </p>
+          <p id="email-error" class="error-msg body-sm-regular d-none"></p>
         </div>
         <!-- Query Type -->
         <div class="query_type">
@@ -101,9 +102,7 @@
               </label>
             </div>
           </div>
-          <p class="error-msg body-sm-regular d-none">
-            Please select a query type
-          </p>
+          <p id="query_type-error" class="error-msg body-sm-regular d-none"></p>
         </div>
         <!-- Message -->
         <div>
@@ -111,7 +110,7 @@
             >Message <span class="asterisk">*</span></label
           >
           <textarea name="message" id="message"></textarea>
-          <p class="error-msg body-sm-regular d-none">This field is required</p>
+          <p id="message_error" class="error-msg body-sm-regular d-none"></p>
         </div>
         <div class="consent">
           <div class="wrapper">
@@ -121,11 +120,11 @@
               <span class="asterisk">*</span>
             </label>
           </div>
-          <p class="error-msg body-sm-regular d-none">
-            To submit this form, please consent to being contacted
-          </p>
+          <p id="consent_error" class="error-msg body-sm-regular d-none"></p>
         </div>
-        <button class="body-md-bold" type="submit">Submit</button>
+        <button id="submitBtn" class="body-md-bold" type="submit">
+          Submit
+        </button>
       </form>
     </main>
   </body>
