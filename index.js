@@ -107,6 +107,12 @@ const handleSubmit = (e) => {
     // Show success message
     successDisplay.classList.remove("d-none");
     window.scrollTo({ top: 0, behavior: "smooth", block: "center" });
+
+    // Hide success message after 5 seconds
+    setTimeout(() => {
+      successDisplay.classList.add("d-none");
+    }, 5000); // 5000 milliseconds = 5 seconds
+
     form.reset(); // Reset the form
   } else {
     // Form is invalid, log errors and scroll to the first invalid field
