@@ -61,16 +61,14 @@ textarea {
   display: block;
   padding: 0.75rem 1.5rem;
 }
-input[type=text].error,
-input[type=email].error,
-textarea.error {
-  border-color: #d73c3c;
-}
 
 textarea {
   height: 15rem;
   margin: 0.5rem 0;
   width: 100%;
+}
+textarea.error {
+  border-color: #d73c3c;
 }
 
 input[type=text],
@@ -179,6 +177,13 @@ main.container form .name {
   margin-top: 2rem;
   margin-bottom: 1.5rem;
 }
+main.container form .name .first_name input.error,
+main.container form .name .last_name input.error {
+  border-color: #d73c3c;
+}
+main.container form .email input.error {
+  border-color: #d73c3c;
+}
 main.container form .query_type {
   margin: 1.5rem 0;
 }
@@ -186,7 +191,7 @@ main.container form .query_type .wrapper {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
-  margin-top: 1rem;
+  margin: 1rem 0;
 }
 main.container form .query_type .wrapper .general_enq,
 main.container form .query_type .wrapper .support_req {
@@ -215,6 +220,7 @@ main.container form .consent .wrapper {
   display: flex;
   align-items: center;
   column-gap: 1rem;
+  margin-bottom: 0.5rem;
 }
 main.container form .consent .wrapper label:hover, main.container form .consent .wrapper label:focus, main.container form .consent .wrapper label:active {
   cursor: pointer;

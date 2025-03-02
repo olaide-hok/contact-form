@@ -37,16 +37,16 @@ textarea {
   border: 1px solid $grey-500;
   display: block;
   padding: $space-150 $space-300;
-
-  &.error {
-    border-color: $red;
-  }
 }
 
 textarea {
   height: rem(240px);
   margin: $space-100 0;
   width: 100%;
+
+  &.error {
+    border-color: $red;
+  }
 }
 
 input[type="text"],
@@ -174,6 +174,23 @@ main {
         row-gap: $space-300;
         margin-top: $space-400;
         margin-bottom: $space-300;
+
+        .first_name,
+        .last_name {
+          input {
+            &.error {
+              border-color: $red;
+            }
+          }
+        }
+      }
+
+      .email {
+        input {
+          &.error {
+            border-color: $red;
+          }
+        }
       }
 
       .query_type {
@@ -183,7 +200,7 @@ main {
           display: flex;
           flex-direction: column;
           row-gap: $space-200;
-          margin-top: $space-200;
+          margin: $space-200 0;
 
           .general_enq,
           .support_req {
@@ -213,6 +230,7 @@ main {
           display: flex;
           align-items: center;
           column-gap: $space-200;
+          margin-bottom: $space-100;
 
           label {
             &:hover,
