@@ -41,7 +41,7 @@ textarea {
 
 textarea {
   height: rem(240px);
-  margin: $space-100 0;
+  margin-top: $space-100;
   width: 100%;
 
   &.error {
@@ -52,7 +52,7 @@ textarea {
 input[type="text"],
 input[type="email"] {
   height: rem(51px);
-  margin: $space-100 0;
+  margin-top: $space-100;
   width: 100%;
 
   &:hover,
@@ -120,6 +120,7 @@ label {
 
 .error-msg {
   color: $red;
+  margin-top: $space-100;
 }
 
 main {
@@ -200,7 +201,7 @@ main {
           display: flex;
           flex-direction: column;
           row-gap: $space-200;
-          margin: $space-200 0;
+          margin-top: $space-200;
 
           .general_enq,
           .support_req {
@@ -230,7 +231,6 @@ main {
           display: flex;
           align-items: center;
           column-gap: $space-200;
-          margin-bottom: $space-100;
 
           label {
             &:hover,
