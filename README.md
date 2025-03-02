@@ -10,7 +10,6 @@ This is a solution to the [Contact form challenge on Frontend Mentor](https://ww
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -31,12 +30,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./contact-form.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Link](https://olaide-hok.github.io/contact-form/)
 
 ## My process
 
@@ -50,8 +48,8 @@ Users should be able to:
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Form required with asterisks](https://www.accessibility-developer-guide.com/examples/forms/required/) - This helped me in indicating form controls as required using asterisks (\*).
+- [Learn Forms](https://web.dev/learn/forms) - This is an amazing resource to learn about developing HTML forms.
 
 ## Author
 
