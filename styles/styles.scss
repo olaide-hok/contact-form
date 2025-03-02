@@ -247,6 +247,9 @@ main {
 }
 
 @media screen and (min-width: 756px) {
+  textarea {
+    height: rem(132px);
+  }
   main {
     &.container {
       padding: 0;
@@ -289,6 +292,9 @@ main {
 }
 
 @media screen and (min-width: 1440px) {
+  textarea {
+    height: rem(105px);
+  }
   main {
     &.container {
       padding: 0;

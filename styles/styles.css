@@ -227,6 +227,9 @@ main.container form .consent .wrapper label:hover, main.container form .consent 
 }
 
 @media screen and (min-width: 756px) {
+  textarea {
+    height: 8.25rem;
+  }
   main.container {
     padding: 0;
     margin: 8rem auto;
@@ -258,6 +261,9 @@ main.container form .consent .wrapper label:hover, main.container form .consent 
   }
 }
 @media screen and (min-width: 1440px) {
+  textarea {
+    height: 6.5625rem;
+  }
   main.container {
     padding: 0;
     margin: 8rem auto;
