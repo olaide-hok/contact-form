@@ -121,6 +121,9 @@ label {
 .error-msg {
   color: $red;
   margin-top: $space-100;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease; /* Smooth animation */
 }
 
 main {
